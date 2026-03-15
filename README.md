@@ -1,19 +1,13 @@
-# @raex-ui/ink-bloom
+# Ink Bloom
 
-An ink-in-water dissolve effect where digits bloom in with blur and scale, creating an organic morphing transition between values.
+Animated digit component with an ink-in-water dissolve effect. Digits bloom in with blur and scale, creating an organic morphing transition between values.
 
-![ink-bloom](https://raex-ui.vercel.app/components/ink-bloom)
-
-## Install
-
-```bash
-npm install @raex-ui/ink-bloom
-```
+[Live Demo →](https://vbuilds.vercel.app/components/ink-bloom)
 
 ## Usage
 
 ```tsx
-import { InkBloom } from "@raex-ui/ink-bloom";
+import { InkBloom } from "./ink-bloom";
 
 function MyComponent() {
   const [digit, setDigit] = useState(0);
@@ -23,18 +17,16 @@ function MyComponent() {
 
 ## Props
 
-| Prop | Type | Description |
-|------|------|-------------|
-| `value` | `number` | Digit to display (0–9) |
-| `size` | `number` | Width in pixels. Height is automatically 1.5× width. |
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `value` | `number` | `0` | Digit to display (0–9) |
+| `size` | `number` | `64` | Width in pixels. Height is 1.5× width. |
 
-## Peer Dependencies
+## Built With
 
-- `react` >=18
-- `react-dom` >=18
-- `framer-motion` >=10
-
-No Tailwind CSS required.
+- React
+- Framer Motion
+- TypeScript
 
 ## License
 
